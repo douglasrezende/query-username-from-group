@@ -1,0 +1,4 @@
+select usr.username from YFS_USER_GROUP_LIST grpl
+inner join YFS_USER usr on grpl.USER_KEY = usr.USER_KEY
+inner join YFS_USER_GROUP grp on grpl.USERGROUP_KEY = grp.USERGROUP_KEY
+where grp.USERGROUP_NAME  = 'DEV_B2B_TEST'
